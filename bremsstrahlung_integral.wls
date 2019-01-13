@@ -385,3 +385,15 @@ MaxPoints->500000,WorkingPrecision->5,PrecisionGoal->3]] (* == ne*NIntegrate[I\[
 
 (* ::Input:: *)
 (*(*TODO: change variables to spectrumElectrons[\[Epsilon]0,\[Epsilon]c,f] and change %126*)*)
+
+
+(* ::Text:: *)
+(*The LWFA electron spectrum is described by*)
+
+
+(* ::Input::Initialization:: *)
+dNedEe [Ee_,T_,N0_]:= N0  Exp[-(Ee/T)] 
+
+
+(* ::Text:: *)
+(*with T being the temperature of hot electrons and N0 a normalization factor.*)
